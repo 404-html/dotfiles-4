@@ -85,9 +85,13 @@ nmap <F8> :TagbarToggle<CR>
 
 " ======= Colorscheme fixes =========
 
+hi clear VertSplit
+hi clear TabLineFill
+hi clear TabLine
+hi clear TabLineSel
+hi TabLineSel guifg=Green
+hi VertSplit guifg=#444444
 hi Visual term=reverse cterm=reverse guibg=Darkgreen
 hi LineNr guifg=#444444
 hi CursorLineNr guifg=#333333
-
-
-
+hi NonText guifg=#333333
