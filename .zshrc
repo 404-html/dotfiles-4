@@ -10,7 +10,7 @@ unsetopt BEEP
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="robbyrussell"
+ZSH_THEME="gallois"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -111,6 +111,8 @@ alias ff="ag --nobreak --nonumbers --noheading . | fzf"
 alias i3config="nvim ~/.config/i3/config"
 alias zshconfig="nvim ~/.zshrc"
 alias nvimconfig="nvim ~/.config/nvim/init.vim"
+alias termconfig="nvim ~/.config/alacritty/alacritty.yml"
+alias cat="bat"
 
 
 alias powersave='sudo cpupower frequency-set -g powersave'
@@ -140,6 +142,8 @@ fe() {
   [[ -n "$files" ]] && ${EDITOR:-vim} "${files[@]}"
 }
 
+export ORG_HOME="$HOME/org"
 export EDITOR="nvim"
 export KUBE_EDITOR="nvim"
-export PATH=$PATH:$HOME/.local/bin
+export PATH=$PATH:$HOME/.local/bin:$HOME/.scripts/org
+

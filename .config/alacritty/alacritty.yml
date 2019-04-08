@@ -84,8 +84,10 @@ font:
     # Default:
     #   - (macOS) Menlo
     #   - (Linux) monospace
-    #   - (Windows) Consolas
-    family: Fira Code
+    #   - (Windows) Cosolas
+    #family: Hasklig
+    #style: Retina 
+    family: monospace
 
     # The `style` can be specified to pick a specific face.
     #style: Regular
@@ -99,7 +101,7 @@ font:
     #family: monospace
 
     # The `style` can be specified to pick a specific face.
-    #style: Bold
+    #style: Retina
 
   # Italic font face
   #italic:
@@ -113,7 +115,7 @@ font:
     #style: Italic
 
   # Point size
-  size: 9.0
+  size: 10.0
 
   # Offset is the extra space around each character. `offset.y` can be thought of
   # as modifying the line spacing, and `offset.x` as modifying the letter spacing.
@@ -153,36 +155,64 @@ persistent_logging: false
 # If `true`, bold text is drawn using the bright color variants.
 draw_bold_text_with_bright_colors: true
 
-
-
-# Colors (Ayu Dark)
+# # Colors (PaperColor - Light)
 colors:
   # Default colors
   primary:
-    background: '0x0A0E14'
-    foreground: '0xB3B1AD'
+    background: '0xEEEEEE'
+    foreground: '0x4D4D4C'
 
   # Normal colors
   normal:
-    black: '0x01060E'
-    red: '0xEA6C73'
-    green: '0x91B362'
-    yellow: '0xF9AF4F'
-    blue: '0x53BDFA'
-    magenta: '0xFAE994'
-    cyan: '0x90E1C6'
-    white: '0xC7C7C7'
+    black:   '0xEDEDED'
+    red:     '0xD7005F'
+    green:   '0x718C00'
+    yellow:  '0xD75F00'
+    blue:    '0x4271AE'
+    magenta: '0x8959A8'
+    cyan:    '0x3E999F'
+    white:   '0x4D4D4C'
 
   # Bright colors
   bright:
-    black: '0x686868'
-    red: '0xF07178'
-    green: '0xC2D94C'
-    yellow: '0xFFB454'
-    blue: '0x59C2FF'
-    magenta: '0xFFEE99'
-    cyan: '0x95E6CB'
-    white: '0xFFFFFF'
+    black:   '0x969694'
+    red:     '0xD7005F'
+    green:   '0x718C00'
+    yellow:  '0xD75F00'
+    blue:    '0x4271AE'
+    magenta: '0x8959A8'
+    cyan:    '0x3E999F'
+    white: '0xF5F5F5'
+
+
+# Colors (Ayu Dark)
+# colors:
+#   # Default colors
+#   primary:
+#     background: '0x0A0E14'
+#     foreground: '0xB3B1AD'
+# 
+#   # Normal colors
+#   normal:
+#     black: '0x01060E'
+#     red: '0xEA6C73'
+#     green: '0x91B362'
+#     yellow: '0xF9AF4F'
+#     blue: '0x53BDFA'
+#     magenta: '0xFAE994'
+#     cyan: '0x90E1C6'
+#     white: '0xC7C7C7'
+# 
+#   # Bright colors
+#   bright:
+#     black: '0x686868'
+#     red: '0xF07178'
+#     green: '0xC2D94C'
+#     yellow: '0xFFB454'
+#     blue: '0x59C2FF'
+#     magenta: '0xFFEE99'
+#     cyan: '0x95E6CB'
+#     white: '0xFFFFFF'
 
 
 # Colors (Tomorrow Night Bright)
@@ -284,7 +314,7 @@ visual_bell:
 #
 # Window opacity as a floating point number from `0.0` to `1.0`.
 # The value `0.0` is completely transparent and `1.0` is opaque.
-background_opacity: 0.90
+background_opacity: 0.9
 
 # Mouse bindings
 #
