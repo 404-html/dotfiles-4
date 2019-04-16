@@ -65,6 +65,9 @@ let g:LanguageClient_serverCommands = {
     \ 'rust': ['~/.cargo/bin/rustup', 'run', 'stable', 'rls'],
     \ 'python': ['~/.local/bin/pyls'],
     \ }
+
+let g:LanguageClient_settingsPath='settings.json'
+
 let g:LanguageClient_useVirtualText=0
 
 let g:python_host_prog  = '/usr/bin/python2'
@@ -134,6 +137,26 @@ tnoremap <Esc> <C-\><C-n>
 
 " TagBar
 nmap <F8> :TagbarToggle<CR>
+
+
+
+nnoremap <F1> :call QuickfixToggle()<cr>
+
+let g:quickfix_is_open = 0
+
+function! QuickfixToggle()
+    if g:quickfix_is_open
+        cclose
+        let g:quickfix_is_open = 0
+        execute g:quickfix_return_to_window . "wincmd w"
+    else
+        let g:quickfix_return_to_window = winnr()
+        copen
+        let g:quickfix_is_open = 1
+    endif
+endfunction
+
+
 
 
 colorscheme space_vim_theme

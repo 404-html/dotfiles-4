@@ -113,7 +113,7 @@ alias zshconfig="nvim ~/.zshrc"
 alias nvimconfig="nvim ~/.config/nvim/init.vim"
 alias termconfig="nvim ~/.config/alacritty/alacritty.yml"
 alias cat="bat"
-
+alias e="emacsclient"
 
 alias powersave='sudo cpupower frequency-set -g powersave'
 alias performance='sudo cpupower frequency-set -g performance'
@@ -141,6 +141,7 @@ fe() {
   IFS=$'\n' files=($(fzf-tmux --query="$1" --multi --select-1 --exit-0))
   [[ -n "$files" ]] && ${EDITOR:-vim} "${files[@]}"
 }
+
 
 export ORG_HOME="$HOME/org"
 export EDITOR="nvim"

@@ -64,7 +64,7 @@ bar {
 
 # ===== Start ========
 exec compton -CG
-exec --no-startup-id bin/jetbrains-toolbox --minimize & 
+exec --no-startup-id usnset QT_SCALE_FACTOR && bin/jetbrains-toolbox --minimize & 
 # ===== Bindings =====
 
 # start a terminal

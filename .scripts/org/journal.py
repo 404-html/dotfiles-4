@@ -97,5 +97,5 @@ if not record_name:
 
 append_record(entry_path, record_name)
 
-subprocess.call("emacsclient -nw +"+str(line_num+2) + " " + entry_path, shell=True)
+subprocess.call("emacs -nw +"+str(line_num+2) + " " + entry_path, shell=True)
 
