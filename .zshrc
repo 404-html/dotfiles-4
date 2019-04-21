@@ -106,7 +106,13 @@ alias c=cd
 alias f=fuck
 
 # Find Files
-alias ff="ag --nobreak --nonumbers --noheading . | fzf"
+# TODO replace with rg
+# alias ff="ag --nobreak --nonumbers --noheading . | fzf"
+
+# Find in Git
+# alias fg="ag --nobreak --nonumbers --noheading '.' $(git rev-parse --show-toplevel) | fzf"
+
+alias gcnm="git commit -a --allow-empty-message -m ''"
 
 alias i3config="nvim ~/.config/i3/config"
 alias zshconfig="nvim ~/.zshrc"
@@ -121,10 +127,6 @@ alias performance='sudo cpupower frequency-set -g performance'
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 
 #alias vpn-inkort = 'systemctl status openvpn-client@inkort'
-
-
-# Find in Git
-# alias fg="ag --nobreak --nonumbers --noheading '.' $(git rev-parse --show-toplevel) | fzf"
 
 unalias gb
 # Find git Branch
