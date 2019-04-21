@@ -103,7 +103,7 @@ source $ZSH/oh-my-zsh.sh
 alias v='nvim'
 alias vim='nvim'  
 alias c=cd
-alias f=fuck
+alias f=butterfly
 
 # Find Files
 # TODO replace with rg
